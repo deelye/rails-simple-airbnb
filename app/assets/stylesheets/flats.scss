@@ -1,0 +1,60 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  margin: 0;
+  font-family: Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+
+.header {
+  height: 40px;
+  padding: 8px 16px;
+  background-color: #f8f8f8;
+
+}
+
+.container {
+  padding: 5px 50px;
+}
+
+h1 {
+  margin: 5px 0px;
+  font-size: 2.5rem;
+}
+
+.flat-card {
+  width: 300px;
+  border-radius: 2px;
+  box-shadow:
+    0 2px 2px 0 rgba(0,0,0,0.14),
+    0 1px 5px 0 rgba(0,0,0,0.12),
+    0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+
+.flat-card-details {
+  background-color: #f8f8f8;
+  height: auto;
+}
+
+.flat-card-more {
+  height: auto;
+}
+
+.flat-card-icons {
+  display: flex;
+  padding: 5px;
+}
+
+i {
+  padding-right: 5px;
+}

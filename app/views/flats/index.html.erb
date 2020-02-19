@@ -1,0 +1,31 @@
+<div class="header">
+  <h3>Simple Airbnb</h3>
+</div>
+
+<div class="container">
+  <h1>All our flats</h1>
+  <p>All <%= Flat.count %> flats.</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+
+    <% @flats.each do |flat| %>
+      <div class="flat-card">
+        <div class="flat-card-details">
+          <h3><%= flat.name %></h3>
+          <p><%= flat.address %></p>
+          <div class="flat-card-icons">
+            <i class="fas fa-user-friends"> <%= flat.number_of_guests %> </i>  <i class="fas fa-euro-sign"> <%= flat.price_per_night %></i>
+          </div>
+        </div>
+        <div class="flat-card-more">
+          <p>More info</p>
+        </div>
+      </div>
+    <% end %>
+
+    </div>
+  </div>
+</div>
